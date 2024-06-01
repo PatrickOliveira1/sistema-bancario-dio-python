@@ -39,8 +39,9 @@ while True:
         valor = float(input("digite o valor a ser sacado:"))
 
         excedeu_saques = numero_saques >= LIMITE_SAQUES
+        excedeu_limite = valor > limite
 
-        if valor > 500:
+        if excedeu_limite:
             print("Você ultrapassou seu limite de saque!")
 
         elif excedeu_saques:
